@@ -1,0 +1,63 @@
+{
+  "name": "workshop-ui-testing",
+  "version": "1.0.0",
+  "description": "Testing react & redux with jest & enzyme",
+  "main": "index.js",
+  "scripts": {
+    "dev": "webpack-dev-server --hot --inline --progress --mode development",
+    "precommit": "npm run lint && npm run test",
+    "lint": "eslint --ext .js,.jsx .",
+    "test": "jest"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/MAlecuPenta/workshop-ui-testing.git"
+  },
+  "keywords": [
+    "react",
+    "redux",
+    "jest",
+    "enzyme",
+    "workshop"
+  ],
+  "author": "malecu@pentalog.com",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/MAlecuPenta/workshop-ui-testing/issues"
+  },
+  "homepage": "https://github.com/MAlecuPenta/workshop-ui-testing#readme",
+  "dependencies": {
+    "@cloudmargin/eslint-config-cloudmargin-ui": "^3.0.1",
+    "html-webpack-plugin": "^3.2.0",
+    "path": "^0.12.7",
+    "prop-types": "^15.6.2",
+    "react": "^16.5.0",
+    "react-dom": "^16.5.0",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "webpack": "^4.18.0",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.8"
+  },
+  "devDependencies": {
+    "babel-core": "6.26.0",
+    "babel-eslint": "8.2.2",
+    "babel-loader": "7.1.3",
+    "babel-plugin-module-resolver": "^3.1.1",
+    "babel-polyfill": "^6.26.0",
+    "babel-preset-env": "1.6.1",
+    "babel-preset-react": "6.24.1",
+    "babel-preset-stage-2": "6.24.1",
+    "enzyme": "^3.6.0",
+    "enzyme-adapter-react-16.3": "^1.2.0",
+    "enzyme-to-json": "^3.3.4",
+    "husky": "^0.14.3",
+    "jest": "^23.6.0"
+  },
+  "eslintConfig": {
+    "globals": {
+      "window": true
+    },
+    "extends": "./node_modules/@cloudmargin/eslint-config-cloudmargin-ui/index.js"
+  }
+}
